@@ -1,0 +1,28 @@
+{
+  "name": "reactify-npm",
+  "version": "0.1.0",
+  "description": "React skeleton of npmjs.com",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify js/app.jsx -o bundle.js",
+    "start": "node server.js"
+  },
+  "author": "Jason Studstill <jason@jasonstudstill.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1",
+    "superagent": "^1.3.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3"
+  }
+}

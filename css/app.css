@@ -1,0 +1,106 @@
+html {
+  -webkit-font-smoothing: "antialiased";
+  font-family: Consolas, "Liberation Mono", Menlo, Monaco, Courier, monospace;
+}
+
+nav {
+  font: white;
+  background-color: #C02126;
+  height: 38px;
+  display: block;
+  height: 38px;
+  line-height: 38px;
+  white-space: nowrap;
+}
+
+nav > * {
+  font-size: .75em;
+  float: right;
+  display: block;
+  padding: 0 .5em;
+
+}
+
+nav a {
+    color: #E6E6E6;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+     color: #ffffff;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+#randomPkg {
+  float: left;
+}
+
+
+#header {
+  background-color: #E6E6E6;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#header > * {
+  display: inline-block;
+  position: relative;
+  padding: 1%;
+}
+
+.headerImages {
+  height: 100%;
+}
+
+#npmLogo {
+  height: 49px;
+  width: 125px;
+}
+
+#headImage {
+  height: 45.3333px;
+  width: 45px;
+}
+
+#npmSearch > input {
+  height: 100%;
+}
+
+article {
+  margin: 5% auto;
+}
+
+.packageWrapper {
+  display: inline-block;
+  position: relative;
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin: 25px 50px;
+  font-size: .75em;
+  text-align: center;
+}
+
+.packageWrapper > * {
+  max-width: 100%;
+  margin: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  nav > * {
+    font-size: .15em;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  nav > * {
+    display: none
+}
